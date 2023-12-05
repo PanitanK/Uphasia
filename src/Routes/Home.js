@@ -1,6 +1,6 @@
-import Title from './image/logo/TitleCB.png';
+import Title from './image/logo/Uphasia.png';
 import './css/App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import UserIcon from "./image/svg/person.png"
 
