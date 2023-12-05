@@ -1,10 +1,10 @@
 import Speech1 from './image/logo/Speech1.png';
 import './css/App.css';
-import { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 
-function Naming() {
+function Speech() {
   const navigate = useNavigate();
  
 
@@ -32,5 +32,5 @@ function Naming() {
   }
 
   
-export default Naming;
+export default Speech;
 

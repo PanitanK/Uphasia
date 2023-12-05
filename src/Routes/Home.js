@@ -1,12 +1,12 @@
 import HomePage from './image/logo/HomePage.png';
 import './css/App.css';
-import { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
   const navigate = useNavigate();
-  const [mode, setMode] = useState("/option1");
+
 
 
     return (
@@ -26,26 +26,26 @@ function Home() {
         </div>
         <div className="sidebar">
             <div
-              className={`sidebar-option ${mode === '/option1' ? 'active' : ''}`}
+              className={`sidebar-option `}
               onClick={() => navigate('/Naming')}
             >
 
             </div>
             <div
-              className={`sidebar-option ${mode === '/option3' ? 'active' : ''}`}
+              className={`sidebar-option `}
               onClick={() => navigate('/Rep')}
             >
               
               <span></span>
             </div>
             <div
-              className={`sidebar-option ${mode === '/option4' ? 'active' : ''}`}
+              className={`sidebar-option `}
               onClick={() => navigate('/Comprehension')}
             >
             
             </div>
             <div
-              className={`sidebar-option ${mode === '/option2' ? 'active' : ''}`}
+              className={`sidebar-option `}
               onClick={() => navigate('/Speech')}
             >
          

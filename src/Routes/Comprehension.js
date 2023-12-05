@@ -1,10 +1,10 @@
 import Comprehension1 from './image/logo/Comprehension1.png';
 import './css/App.css';
-import { useState } from 'react';
+
 import { useNavigate } from 'react-router-dom';
 
 
-function Naming() {
+function Comprehension() {
   const navigate = useNavigate();
  
 
@@ -27,5 +27,5 @@ function Naming() {
   }
 
   
-export default Naming;
+export default Comprehension;
 
