@@ -9,6 +9,10 @@ import './index.css';
 
 import Home from './Routes/Home';
 import Err from './Routes/Err';
+import Naming from './Routes/Naming';
+import Rep from './Routes/Rep';
+import Speech from './Routes/Speech';
+import Comprehension from './Routes/Comprehension';
 
 const router = createBrowserRouter([
   {
@@ -16,14 +20,27 @@ const router = createBrowserRouter([
     errorElement: <Err />,
     element:  <Home/>,
   },
-
+  {
+    path: "/Naming",
+    errorElement: <Err />,
+    element:  <Naming/>,
+  },
+  {
+    path: "/Rep",
+    errorElement: <Err />,
+    element:  <Rep/>,
+  },
 
   {
-    //path: "/Mapframe",
-    
-    //element:  <Mapframe/>,
+    path: "/Comprehension",
+    errorElement: <Err />,
+    element:  <Comprehension/>,
   },
-  
+  {
+    path: "/Speech",
+    errorElement: <Err />,
+    element:  <Speech/>,
+  },
 ]);
 
 

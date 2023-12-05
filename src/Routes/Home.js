@@ -1,82 +1,61 @@
-
 import HomePage from './image/logo/HomePage.png';
 import './css/App.css';
 import { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
-  //var fetchcount = 0;   
-
- 
-
+  const navigate = useNavigate();
   const [mode, setMode] = useState("/option1");
-
-
-  //  <ContentBoard mode={mode} userData={userData} plotDocuments={plotDocuments} />
-
-  
-  const handleMode = (USERMode) => {
-    setMode(USERMode);
-  };
-  
-  
-
-  
-
-  
-  
 
 
     return (
        /* STATIC BAR */
+
        <div className="App">
-        <img src={HomePage}  alt="UGBN" className="Mockup" />
-       
-  
-        <div className="Dashboard">
-          <div className="sidebar">
+        <div className="Hitbox2"
+        onClick={() => navigate('/')}
+        >
+          My hit box
+        </div>
+        <div className="sidebar">
             <div
               className={`sidebar-option ${mode === '/option1' ? 'active' : ''}`}
-              onClick={() => handleMode('/option1')}
+              onClick={() => navigate('/Naming')}
             >
-              <img src={null} alt="UGBN" className="IconClass" />
-              <span>Home</span>
+
             </div>
             
             <div
               className={`sidebar-option ${mode === '/option3' ? 'active' : ''}`}
-              onClick={() => handleMode('/option3')}
+              onClick={() => navigate('/Rep')}
             >
-              <img src={null} alt="UGBN" className="IconClass" />
-              <span>Research</span>
+              
+              <span></span>
             </div>
             <div
               className={`sidebar-option ${mode === '/option4' ? 'active' : ''}`}
-              onClick={() => handleMode('/option4')}
+              onClick={() => navigate('/Comprehension')}
             >
-              <img src={null} alt="UGBN" className="IconClass" />
-              <span>Partners</span>
+            
             </div>
             <div
               className={`sidebar-option ${mode === '/option2' ? 'active' : ''}`}
-              onClick={() => handleMode('/option2')}
+              onClick={() => navigate('/Speech')}
             >
-              <img src={null} alt="UGBN" className="IconClass" />
-              <span>Request</span>
+         
             </div>
-            <div
-              className={`sidebar-option ${mode === '/option5' ? 'active' : ''}`}
-              onClick={() => handleMode('/option5')}
-            >
-              <img src={null} alt="UGBN" className="IconClass" />
-              <span>Pricing</span>
-            </div>
+
           </div>
+
+        <img src={HomePage}  alt="UGBN" className="Mockup" />
+
+        
+
         </div>
+        
   
 
-      </div>
     );
   }
 
