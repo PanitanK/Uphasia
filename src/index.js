@@ -13,7 +13,7 @@ import Naming from './Routes/Naming';
 import Rep from './Routes/Rep';
 import Speech from './Routes/Speech';
 import Comprehension from './Routes/Comprehension';
-
+import Dashboard from './Routes/Dashboard';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,7 +30,6 @@ const router = createBrowserRouter([
     errorElement: <Err />,
     element:  <Rep/>,
   },
-
   {
     path: "/Comprehension",
     errorElement: <Err />,
@@ -40,6 +39,11 @@ const router = createBrowserRouter([
     path: "/Speech",
     errorElement: <Err />,
     element:  <Speech/>,
+  },
+  {
+    path: "/Dashboard",
+    errorElement: <Err />,
+    element:  <Dashboard/>,
   },
 ]);
 

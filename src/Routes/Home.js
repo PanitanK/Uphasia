@@ -14,7 +14,13 @@ function Home() {
 
        <div className="App">
         <div className="Hitbox2"
-        onClick={() => navigate('/')}
+        onClick={() => navigate('/Dashboard')}
+        >
+          My hit box
+        </div>
+
+        <div className="Hitbox3"
+        onClick={() => navigate('/Rep')}
         >
           My hit box
         </div>
@@ -25,7 +31,6 @@ function Home() {
             >
 
             </div>
-            
             <div
               className={`sidebar-option ${mode === '/option3' ? 'active' : ''}`}
               onClick={() => navigate('/Rep')}

@@ -533,7 +533,30 @@
   }
   
 }
+.Hitbox3 {
 
+  width: 30vw;
+  height: 8vw;
+
+  background-color: #0863f4e2;
+  color: rgba(150, 7, 7, 0);
+
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+
+  @media screen and (min-width: 1024px) {
+    margin-left: 36vw;
+    margin-top: 75vh;
+  }
+  
+
+  @media screen and (max-height: 600px) {
+    margin-top: 0vw;
+    padding-top: 10vh;
+  }
+  
+}
 
 .sidebar-option {
   width: 100%;
