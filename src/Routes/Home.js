@@ -1,16 +1,13 @@
-import Title from './image/logo/Uphasia.png';
+
+import HomePage from './image/logo/HomePage.png';
 import './css/App.css';
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import UserIcon from "./image/svg/person.png"
 
-import { Link } from "react-router-dom";
 
-import ContentBoard from './ContentBoard';
 
 function Home() {
-  //var fetchcount = 0;
-  const location = useLocation();
+  //var fetchcount = 0;   
+
  
 
   const [mode, setMode] = useState("/option1");
@@ -34,17 +31,8 @@ function Home() {
     return (
        /* STATIC BAR */
        <div className="App">
-       <div className="static-bar">
-       <div className="left-content">
-         <Link to="/">
-           <img className="title-image" src={Title} alt="Title" />
-         </Link>
-       </div>
-       <div className="green-box2">
-         <img src={UserIcon} alt="UGBN" className="UserIcon" />
-         <h1 className="green-box-text2"> ศร แสนสิริ</h1>
-       </div>
-     </div>
+        <img src={HomePage}  alt="UGBN" className="Mockup" />
+       
   
         <div className="Dashboard">
           <div className="sidebar">
@@ -87,10 +75,7 @@ function Home() {
           </div>
         </div>
   
-        <div className="ContentBoard">
-        
-          <ContentBoard mode = {mode} />
-        </div>
+
       </div>
     );
   }
