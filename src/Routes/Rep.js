@@ -1,51 +1,86 @@
-import React, { useState, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Kaprow from './image/Data/Examplevoice.m4a';
-import Rep1 from './image/logo/Rep1.png';
-import Rep2 from './image/logo/Rep2.png';
+import './css/App.css';
+
+import UserIcon from './image/svg/person.png';
+import Title from './image/logo/Uphasia.png';
+import { Link } from "react-router-dom";
+
+
 
 function Rep() {
-  const navigate = useNavigate();
-  const audioRef = useRef(null);
-  const [imageSrc, setImageSrc] = useState(Rep1);
 
-  const handleButtonClick = () => {
-    // Play the Kaprow audio file when the button is clicked
-    audioRef.current.play();
-  
-    // Wait for 3 seconds and then change the image source to Rep2
-    setTimeout(() => {
-      setImageSrc(Rep2);
-    }, 2200); // 3000 milliseconds = 3 seconds
-  };
+ 
 
-  return (
-    /* STATIC BAR */
-    <div className="App">
-      <div
-        className="Hitbox"
-        onClick={() => navigate('/')}
-      >
-        My hit box
+
+    return (
+      /* STATIC BAR */
+      <div className="App">
+      <div className="static-bar">
+      <div className="left-content">
+
+      <Link to="/">
+          <img className="title-image" src={Title} alt="Title"   />
+       </Link>
       </div>
 
-      <div
-        className="Hitbox4"
-        onClick={handleButtonClick}
-      >
-        My hit box
+      <div className="Middle-content">
+       <h1>Repetition Excerise</h1>
       </div>
+     <div className='right-content'>
 
-      {/* Use dynamic image source */}
-      <img src={imageSrc} alt="UGBN" className="Mockup" />
+      <div className="ProfileBox">
+        <img src={UserIcon} alt="UGBN" className="UserIcon" />
+        <h1 className="ProfileText">Name EIEI</h1>
+      </div>
+     </div>
 
-      {/* Audio Player without default controls */}
-      <audio ref={audioRef}>
-        <source src={Kaprow} type="audio/mp4" />
-        Your browser does not support the audio tag.
-      </audio>
     </div>
-  );
-}
+
+       <div className="Dashboard">
+         <div className='etcBoard'>
+         <h1>SAI FEATURE LOHR ? Mai Whai Lork</h1>
+           </div>
+         <div className="modetab">
+
+           <div className='ModeHeading'>
+           <h1>N/A Block 1 </h1>
+           </div>
+         
+           
+       
+           <div
+             className={`sidebar-option`}
+            
+           >
+             <span>N/A Block 2</span>
+             
+           </div>
+
+
+           <div
+             className={`sidebar-option`}
+     
+           >
+           
+           <span>N/A Block 3</span>
+           </div>
+           <div
+             className={`sidebar-option`}
+            
+           >
+            
+            <span>N/A Block 4</span>
+           </div>
+           <div
+             className={`sidebar-option`}
+            
+           >
+             
+             <span>N/A Block 5</span>
+           </div>
+         </div>
+       </div>
+     </div>
+   );
+  }
 
 export default Rep;

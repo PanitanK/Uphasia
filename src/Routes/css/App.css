@@ -1,6 +1,11 @@
+:root {
+
+  --MahidolBlue: #0005AF;
+  --BGC : #F5F5F5;
+}
 .App {
   text-align: center;
-
+  background-color: var(--BGC);
   min-height: 100vh;
   box-sizing: border-box; 
   overflow-x: hidden;
@@ -38,8 +43,8 @@
 .static-bar {
 position: fixed;
 width: 100vw;
-height: vh;
-background-color: #199433;
+
+
 color: #fff;
 display: flex;
 align-items: center;
@@ -53,11 +58,11 @@ justify-content: space-between;
 
 
 @media screen and (min-width: 1024px) {
-  /*eight: 10vh; */ /*  iPads  */
+  /*eight: 10vw; */ /*  iPads  */
 }
 
 @media screen and (max-height: 600px) {
-  height: 20vh; /* laptops */
+  height: 5vw; /* laptops */
 }
 
 }
@@ -73,208 +78,67 @@ width: 15vw;
 .left-content {
 
 align-items: center;
-background-color: #d62525;
+
 margin-left: 5vw;
 }
 
 .Middle-content{
-  background-color: #d62525;
-  margin-left: -5vw;
+
+  color: var(--MahidolBlue);
+  font-size: 1.5vw;
+
 }
 
 
-.green-box {
-background-color: #38991C; /* Green color for the box */
 
+.ProfileBox {
+background-color: var(--MahidolBlue); /* Green color for the box */
+width: 20vw;
+height: 6vw;
 
-height: 100%; /* Same height as static bar */
-width: 15%;
 
 display: flex;
 align-items: center;
 align-content: center;
-
-@media screen and (min-width: 1024px) {/*  iPads  */
-  width: 20%; 
-}
-
-@media screen and (max-height: 600px) {/* laptops */
-   
-}
-
-
-}
-.green-box2 {
-background-color: #5425d6; /* Green color for the box */
-
-
-margin-right: 0vh; /* Space from the right */
-display: flex;
-align-items: center;
-align-content: center;
-font-size: 30px;
 
 }
 
 .right-content {
 padding: 2.5vw;
 margin-right: 5vw;
-background-color: #a89fc0;
+
 
 }
 
-.green-box-link {
-color: #fff;
-text-decoration: none;
-}
 
-.Locker {
-width: 14%; /* Set the desired width for the SVG */
-margin-right: 1%; /* Adjust the space between the SVG and the text */
-padding-left: 5%;
-}
 
-.green-box-link {
-color: #fff;
-text-decoration: none;
-}
 
-.green-box-text {
+.ProfileText{
 margin-left: 10%; /* Adjust the space between the SVG and the text */
 color: white;
 font-weight: bold;
-font-size: 100%;
+
 text-decoration: none;
 padding-right: 5%;
-
-}
-
-.green-box-text2 {
-margin-left: 10%; /* Adjust the space between the SVG and the text */
-color: white;
-font-weight: bold;
-font-size: 16px;
-text-decoration: none;
-padding-right: 5%;
+font-size: 1.5vw;
 
 }
 .UserIcon{
-width: 25%;
+width: 20%;
 margin-left: 10%;
 
 }
 
-
-.rectangle {
-width: 100vw; /* 100% of the viewport width */
-text-align: center;
-color: white;
-font-size: 150%;
-/* Add any other styles as needed */
-}
-
-
-.Component1 {
-margin-top: 0%;
-margin-left: 10%;
-width: 80%;
-height: 10%;
-text-align: center;
-display: flex;
-flex-direction: column;
-align-items: center;
-font-size: 1.2vw;
-}
-
-.rectangle2 {
-
-width: 100%;
-height: 12vh; /* Set the desired height */
-background-color: #38991C; /* Set your desired background color */
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-border-radius: 0%;
-box-sizing: border-box; /* Include the border in the box model */
-}
-
-/* Style for text inside the rectangle */
-.rectangle2 h2 {
-color: #ffffff; /* Set the text color */
-}
-
-.center-table {
-margin-top: 0vh;
-display: flex;
-justify-content: center;
-align-items: center;
-
-
-}
-
-.my-table {
-width: 80%; /* Adjust the width as needed */
-border-collapse: collapse;
-
-}
-
-.table-header {
-width: 50%; /* Each column takes 50% of the table width */
-
-
-text-align: center;
-}
-
-.table-cell {
-width: 50%;
-
-padding: 0vh;
-text-align: center;
-}
-
-.rectangle3 {
-margin-top: 5vh;
-margin-left: 0vw;
-
-padding-left: 2.5vw;
-padding-right: 2.5vw;
-width: 100%;
-height: 120px; /* ITS OK */
-background-color: #02122B; /* Set your desired background color */
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-
-
-box-sizing: border-box; /* Include the border in the box model */
-}
-
-.rectangle3 h1 {
-color: white;
-font-size: 2.5vw;
-}
-
-.rectangle5 {
-text-align: left;
-color: white;
-/* Common styles for both laptop and iPad */
-margin-left: 5vw;
-@media screen and (min-width: 1024px) {
-  /* Styles for laptops */
-  
-  font-size: 2.2vw;
-  
-}
-}
-
-
-.title-image2{
-margin-left: -20px;
-height: 100px; /* Set the desired height for the title image */
-margin-top: 20px;
-margin-bottom: -10px;
+.etcBoard{
+  margin-top: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  background-color: #ffffff;
+  width: 48vw;
+  box-shadow: 0 0  rgba(0, 0, 0, 0.5); 
+  border-radius: 5%;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5); 
 }
 
 
@@ -283,12 +147,22 @@ margin-bottom: -10px;
 .modetab {
 
 width: 25vw;
-
-background-color: #577bb5;
-color: #fff;
-margin-left: 10vw;
+padding-left: 2%;
+padding-right: 2%;
+padding-bottom: 2%;
+background-color: #ffffff;
+margin-top: 1vw;
+margin-right: 1vw;
+margin-bottom: 1vw;
+margin-left: 2vw;
+color: #fff;  
+border-radius: 5%;
+box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Shadow color with alpha */
 display: flex;
 flex-direction: column;
+z-index: 3;
+font-weight: bold;
+
 
 
 @media screen and (min-width: 1024px) {
@@ -303,43 +177,57 @@ flex-direction: column;
 }
 
 .sidebar-option {
-width: 100%;
-height: 10vh;
-padding: 1vw;
-background-color: #ffffffb1;
-color: #000000;
+
+height: 4.5vw;
+
+margin-bottom: 0.5vw;
+padding: 0.1vw;
+color: var(--MahidolBlue);
 cursor: pointer;
 justify-content: center;
 display: flex;
 align-items: center;
-
+border: 0.5vw solid var(--MahidolBlue); /* Add a blue border */
+border-radius: 5%;
+font-size: 1.2vw;
 }
 
 .sidebar-option.active {
-background-color: #102c5908;
+background-color: #5e99f808;
 }
 
 .sidebar-option:hover {
-text-decoration: underline;
+
+color: white;
+background-color: var(--MahidolBlue);
 }
 
 .Dashboard {
-margin-top: 25vh;
-background-color: #efaa16;
+margin-top: 22vh;
+background-color: var(--BGC);
 display: flex;
 overflow-x: hidden;
+justify-content: center;
 }
 
-.IconClass{
-border: #02122B;
-margin-left: 30px;
-margin-right: 10px;
-width: 40px;
-height: 40px;
 
+
+.ModeHeading {
+  display: flex;
+  align-items: center; /* Center vertically within the div */
+  color: var(--MahidolBlue);
+  margin-left: 0.5vw;
+  font-size: 1.5vw;
 
 
 }
+
+.ModeHeading h1 {
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove default margin */
+}
+
+
 .ContentBoard{
 
 
@@ -360,3 +248,20 @@ background-color: #ffffff;
 }
 }
 
+.ProfileInfoTab{
+  margin-top: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+  margin-left: 1vw;
+  background-color: #ffffff;
+  width: 80vw;
+  height: 70vh;
+  box-shadow: 0 0  rgba(0, 0, 0, 0.5); 
+  border-radius: 2%;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5); 
+}
+
+.Placeholder {
+
+  height: 60%;
+}
