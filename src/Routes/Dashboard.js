@@ -13,13 +13,13 @@ function Naming() {
        /* STATIC BAR */
 
        <div className="App">
-        <div className="Hitbox"
+        <div className=""
         onClick={() => navigate('/')}
         >
           My hit box
         </div>
 
-        <img src={Dashboard}  alt="UGBN" className="Mockup" />
+        
 
         
 

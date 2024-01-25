@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState , useEffect } from 'react';
 
-import HomeMode from './HomeComp';
-import ReqMode from './Req'
-import ResearchMode from './Research'
-import PartnerMode from './Partners'
-import MarketMode from './Market'
+
+import Naming from './Naming';
+import Rep from './Rep';
+import Comprehension from './Comprehension';
+import Speech from './Speech';
+
 
 function ContentBoard( mode ) {
 
@@ -16,16 +17,16 @@ function ContentBoard( mode ) {
   }, [mode]);
 
   switch (Currmode) {
-    case '/option1':
-      return <HomeMode  />;
-    case '/option2':
-      return <ReqMode  />;
-    case '/option3':
-      return <ResearchMode />;
-    case '/option4':
-      return <PartnerMode />;
-    case '/option5':
-      return <MarketMode />;
+    case '/Home':
+      return <>This is Home</>;
+    case '/Naming':
+      return <Naming  />;
+    case '/Rep':
+      return <Rep />;
+    case '/Comprehension':
+      return <Comprehension />;
+    case '/Speech':
+      return <Speech />;
 
 
     default:
