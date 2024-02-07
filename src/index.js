@@ -14,12 +14,21 @@ import Rep from './Routes/Rep';
 import Speech from './Routes/Speech';
 import Comprehension from './Routes/Comprehension';
 import Dashboard from './Routes/Dashboard';
+import Welcome from './Routes/Welcome';
+import Register from './Routes/Register';
 const router = createBrowserRouter([
+
   {
     path: "/",
     errorElement: <Err />,
+    element:  <Welcome/>,
+  },
+  {
+    path: "/Home",
+    errorElement: <Err />,
     element:  <Home/>,
   },
+  
   {
     path: "/Naming",
     errorElement: <Err />,
