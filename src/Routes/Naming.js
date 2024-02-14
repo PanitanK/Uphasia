@@ -3,11 +3,11 @@ import './css/App.css';
 import UserIcon from './image/svg/person.png';
 import Title from './image/logo/Uphasia.png';
 import { Link } from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+
 
 
 function Naming() {
-  const navigate = useNavigate();
+
  
 
 
@@ -17,7 +17,7 @@ function Naming() {
       <div className="static-bar">
       <div className="left-content">
 
-      <Link to="/">
+      <Link to="/Home">
           <img className="title-image" src={Title} alt="Title"   />
        </Link>
       </div>

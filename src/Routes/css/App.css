@@ -419,3 +419,11 @@ input::placeholder {
 }
 
 /* Login and Register Section */
+
+.LoginBox{
+  border: 1px solid rgb(124, 124, 124);
+}
+
+.RegisterBox{
+  border: 1px solid rgb(124, 124, 124);
+}

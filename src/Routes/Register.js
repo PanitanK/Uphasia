@@ -1,7 +1,7 @@
 import './css/App.css';
 import UserIcon from './image/svg/person.png';
 import Title from './image/logo/Uphasia.png';
-import React, { useState,useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { auth , db ,storage } from './Firebase';
@@ -11,10 +11,6 @@ import {  ref , uploadBytes} from 'firebase/storage';
 
 
 function Register() {
-  useEffect(() => {
-    window.scrollTo(0, 200); // Scroll to the top of the page
-    // ... other useEffect code ...
-  }, []);
  
   const [email, regEmail] = useState('');
   const [password, regPassword] = useState('');
@@ -31,9 +27,6 @@ function Register() {
         console.log("Uploaded")
 
       })
-
-  
-     
 
     } catch (error) {
       console.error('Error creating user folder: ', error);
@@ -115,23 +108,20 @@ function Register() {
      </Link>
     </div>
 
-    <div className="Middle-content">
-     <h1>Register</h1>
-    </div>
+  
    <div className='right-content'>
 
-    <div className="ProfileBox" onClick={() => navigate('/Dashboard')}>
-      <img src={UserIcon} alt="UGBN" className="UserIcon" />
-      <h1 className="ProfileText">Name EIEI Kraima Saitee</h1> 
-    </div>
+
    </div>
 
   </div>
 
      <div className="App-header">
-      <div className="centering-wrapper"style={{ transform: "scale(0.8)" }} >
+      <div className="RegisterBox" >
         <div className="section1 text-center">
-          <div className="primary-header"><h1>Register</h1></div>        
+        <div className="Middle-content">
+     <h1>Register</h1>
+    </div>  
         
         <form onSubmit={Reg}>
           
@@ -182,7 +172,7 @@ function Register() {
           <Link to="/Login" class="link">Already a user ?</Link>
           <p>{ErrMSG}</p>
           <div>
-          <button type="submit" class="submit-button">ENTER</button>
+          <button type="submit" class="submit-button" onClick={() => navigate('/Login')}>ENTER</button>
           </div>
           
           

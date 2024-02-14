@@ -17,7 +17,7 @@ function Comprehension() {
       <div className="static-bar">
       <div className="left-content">
 
-      <Link to="/">
+      <Link to="/Home">
           <img className="title-image" src={Title} alt="Title"   />
        </Link>
       </div>

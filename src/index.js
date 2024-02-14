@@ -16,6 +16,8 @@ import Comprehension from './Routes/Comprehension';
 import Dashboard from './Routes/Dashboard';
 import Welcome from './Routes/Welcome';
 import Register from './Routes/Register';
+import Login from './Routes/Login';
+
 const router = createBrowserRouter([
 
   {
@@ -27,6 +29,11 @@ const router = createBrowserRouter([
     path: "/Register",
     errorElement:<Err/>,
     element:<Register/>
+  },
+  {
+    path: "/Login",
+    errorElement:<Err />,
+    element:<Login/>
   },
   {
     path: "/Home",
