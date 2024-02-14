@@ -61,8 +61,8 @@ function Register() {
 
   const Reg = async (event) => {
     event.preventDefault();
-    //console.log('Submitted username:', email);
-    //console.log('Submitted password:', password);
+    console.log('Submitted username:', email);
+    console.log('Submitted password:', password);
 
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
@@ -84,7 +84,7 @@ function Register() {
 
       
       };
-
+      
       // Create user document and storage folder simultaneously
       await Promise.all([
         createUserDocumentAndSubcollections(user.uid, dataCollection, profileData),
@@ -106,27 +106,27 @@ function Register() {
   
   return (
     
-  <div className="App">
+    <div className="App">
     <div className="static-bar">
-      <div className="left-content">
-        <a href="/">
-          <img src={Title} alt="Title" /> 
-        </a>
-      </div>
+    <div className="left-content">
 
-      <div className="right-content">
-        
-        <Link to="/Login">
-          <button class="btn1">Login</button>
-        </Link>
-
-        <Link to="/Register">
-        <button class="btn2">Register</button>
-        </Link>
-
-      </div>
-
+    <Link to="/">
+        <img className="title-image" src={Title} alt="Title"   />
+     </Link>
     </div>
+
+    <div className="Middle-content">
+     <h1>Register</h1>
+    </div>
+   <div className='right-content'>
+
+    <div className="ProfileBox" onClick={() => navigate('/Dashboard')}>
+      <img src={UserIcon} alt="UGBN" className="UserIcon" />
+      <h1 className="ProfileText">Name EIEI Kraima Saitee</h1> 
+    </div>
+   </div>
+
+  </div>
 
      <div className="App-header">
       <div className="centering-wrapper"style={{ transform: "scale(0.8)" }} >
