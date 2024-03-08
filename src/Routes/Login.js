@@ -26,7 +26,20 @@ function Login() {
 
       //console.log(userCredential)
       //console.log(_user.uid)
+        /*
+        Uphasia, we are an application that aims to enhance communication well-being. Nowadays, there is a shortage of Speech-Language Pathologists (SLPs) who can effectively treat patients with communication disorders. We see an opportunity to provide new AI technologies, such as ASR and NLP, to make speech therapy more readily available by mimicking the procedures exercised by SLPs in clinics, according to the Thai-WAB test standard (Thai-Western Aphasia Battery Test).
 
+This idea has been preliminarily validated by mentors and judges during Siriraj Hackathon 2023 (3rd Place )
+
+We are currently approaching the medical institution including 
+- Siriraj
+- Ramathibodi
+- Sirinthorn
+- Other Private Clinics 
+
+for clinical trials for the next step, our goal is to have our application placed on the Thai National Innovation List. This approval will give us an advantage, as the application will be authorized for use in communication disorder treatments. Our distribution model will encompass both B2C and B2B approaches, with B2G also being a possibility.
+
+        */
       setErrMsg(null);
       navigate('/Protected', { state: { userUID: _user.uid } });
 
